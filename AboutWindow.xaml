@@ -1,0 +1,76 @@
+<Window x:Class="GlassTodo.AboutWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="关于 专注锁屏控制器" 
+        Height="380" Width="420"
+        WindowStartupLocation="CenterOwner"
+        ResizeMode="NoResize"
+        Background="#1E1E1E"
+        WindowStyle="None"
+        AllowsTransparency="True">
+    
+    <Border Background="#2D2D2D" CornerRadius="10" BorderBrush="#4CAF50" BorderThickness="2">
+        <Grid Margin="30">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <StackPanel Grid.Row="0" HorizontalAlignment="Center" Margin="0,0,0,25">
+                <TextBlock Text="⏱" FontSize="48" HorizontalAlignment="Center" Margin="0,0,0,10"/>
+                <TextBlock Text="专注锁屏控制器" FontSize="24" FontWeight="Bold" Foreground="#4CAF50" HorizontalAlignment="Center"/>
+                <TextBlock Text="Focus Timer Pro" FontSize="14" Foreground="#888" HorizontalAlignment="Center"/>
+            </StackPanel>
+
+            <StackPanel Grid.Row="1" VerticalAlignment="Center" Margin="0,0,0,20">
+                <Grid Margin="0,8">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="100"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Grid.Column="0" Text="版本号：" Foreground="#AAA" FontSize="14"/>
+                    <TextBlock Grid.Column="1" Text="v1.0.0" Foreground="#FFF" FontSize="14"/>
+                </Grid>
+                
+                <Grid Margin="0,8">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="100"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Grid.Column="0" Text="作者：" Foreground="#AAA" FontSize="14"/>
+                    <TextBlock Grid.Column="1" Text="kk" Foreground="#FFF" FontSize="14"/>
+                </Grid>
+                
+                <Grid Margin="0,8">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="100"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Grid.Column="0" Text="版权：" Foreground="#AAA" FontSize="14"/>
+                    <TextBlock Grid.Column="1" Text="© 2026 kk 版权所有" Foreground="#FFF" FontSize="14"/>
+                </Grid>
+                
+                <Grid Margin="0,8">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="100"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Grid.Column="0" Text="框架：" Foreground="#AAA" FontSize="14"/>
+                    <TextBlock Grid.Column="1" Text=".NET 8.0 + WPF" Foreground="#FFF" FontSize="14"/>
+                </Grid>
+                
+                <Grid Margin="0,8">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="100"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Grid.Column="0" Text="功能：" Foreground="#AAA" FontSize="14"/>
+                    <TextBlock Grid.Column="1" Text="专注计时、密码锁定、托盘倒计时" Foreground="#FFF" FontSize="14" TextWrapping="Wrap"/>
+                </Grid>
+            </StackPanel>
+
+            <Button Grid.Row="2" Content="关闭" FontSize="16" Padding="30,10" Background="#4CAF50" Foreground="White" BorderThickness="0" Cursor="Hand" Click="BtnClose_Click" HorizontalAlignment="Center"/>
+        </Grid>
+    </Border>
+</Window>
