@@ -3,6 +3,6 @@
 ## 📦 下载
 | 平台 | 版本 | 说明 |
 |------|------|------|
-| 🪟 Windows | [v1.0.0 直链下载](https://github.com/你的用户名/仓库/releases/download/v1.0.0/你的程序.exe) | Win10/11 64位 |
+| 🪟 Windows | [v1.0.0 直链下载](https://github.com/KK888666/focus_timer/releases/download/v1.0.0/FocusTimer_Setup.exe) | Win10/11 64位 |
 
 
